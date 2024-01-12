@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="x-UA-compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>user login PAGE</title>
+<style>
+/* Reset default styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+}
+
+.wrapper {
+  max-width: 700px;
+  margin-top: 180px;
+  margin-left: 700px;
+  padding: 80px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 5px;
+}
+
+h2.logo {
+  text-align: center;
+  font-size: 40px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+form {
+  padding: 50px;
+}
+
+h2 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.input-box {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.input-box input {
+  width: 100%;
+  padding: 25px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.input-box label {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #999;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  font-weight: bold;
+}
+
+.input-box input:focus + label,
+.input-box input:valid + label {
+  top: 0;
+  transform: translate(-50%, -90%);
+  font-size: 12px;
+  color: #333;
+}
+
+.remember-forgot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #666;
+}
+
+.remember-forgot input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.login-register {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #666;
+}
+
+.register-link {
+  color: #333;
+  font-weight: bold;
+ 
+}
+</style>
+</head>
+<body>
+<div class="wrapper">
+<div class="form-box login">
+<h2 class="logo">login</h2>
+<form action="#">
+  <div class="input-box">
+    <input type="text" required>
+    <label>user name</label>
+    </div>
+<div class="input-box">
+<input type="Email" required>
+<label>Email</label>
+</div>
+<div class="input-box">
+<input type="Password" required>
+<label>Password</label>
+</div>
+
+<div class="remember-forgot">
+<label><input type="checkbox">Remember me</label>
+<a href="#">Forgot password?</a>
+</div>
+<p><button type="submit" class="btn">LOGIN</button></p>
+<div class="login-register">
+<P>don't have an account?<a href="emp regist.html" class="register-link"><h3>Register as member</a></p>
+</div>
+</form>
+</div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

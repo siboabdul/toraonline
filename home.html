@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+	 
+      margin: 0;
+      padding: 0;
+    }
+    
+    .navbar {
+    background-image:linear-gradient(#035747,#012733);
+      color: #fff;
+      padding: 25px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .navbar a {
+      color: #fff;
+      text-decoration: none;
+      margin-right: 15px;
+	  font-size: 20px;
+	  bolder-radius: 10px;
+    }
+    
+    .navbar a:hover {
+      text-decoration: none;
+	  background-color: skyblue;
+	  padding: 10px;
+	  bolder-radius: 10px;
+    }
+    
+    h1 {
+      text-align: center;
+      margin-top: 50px;
+      font-size: 48px;
+      color: #333;
+    }
+    
+    .button {
+      text-align: center;
+      margin-top: 25px;
+	  text-decoration: none;
+    }
+    
+    .button button {
+      background-color: skyblue;
+      color: #fff;
+      padding: 15px 30px;
+      font-size: 40px;
+      border-radius: 20px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+	  font-weight: bold;
+    }
+    
+    .button button:hover {
+      background-color: navy;
+    }
+    .navbar .admin-login-button {
+ background-color:red;
+  border: none;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 20px;
+}
+.navbar .admin-login-button a:hover{
+background-color: red;
+padding:20px;
+bolder-radius: 20px;
+}
+    .cover-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 10px;
+    }
+    
+    .cover {
+      text-align: center;
+      margin: 20px;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+    }
+    
+    .cover img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+    
+    .cover h1 {
+      margin-top: 20px;
+      font-size: 24px;
+      color: #333;
+    }
+    
+    .cover p {
+      font-size: 18px;
+      color: #555;
+    }
+    
+    .footer {
+      background-image:linear-gradient(#035747,#012733);
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    .footer a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+    
+    .footer a:hover {
+      text-decoration: none;
+	  background-color: red;
+    }
+  </style>
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <title>Home Page</title>
+  <script>
+    const currentHour = new Date().getHours();
+    let greeting;
+    if (currentHour < 12) {
+      greeting = 'Good morning! WELCOME TO TORA WEBPAGE';
+    } else if (currentHour < 18) {
+      greeting = 'Good afternoon!';
+    } else {
+      greeting = 'Good evening!';
+    }
+    window.onload = function() {
+      setTimeout(function() {
+        alert(greeting);
+      }, 1000);
+    };
+  </script>
+</head>
+<body>
+  <div class="navbar">
+    <a href="home.html"><i class="ion-ios-home"></i> Home</a> 
+    <a href="cand infor.html"><i class="ion-ios-people"></i> Candidates Information</a> 
+    <a href="voter infor.html"><i class="ion-ios-people"></i> Voter Info & Requirements</a> 
+    <a href="contact us.html"><i class="ion-ios-mail"></i> Contact Us</a> 
+    <a href="my project.html"><i class="ion-ios-checkmark-circle"></i> Online Voting System</a> 
+    <button class="admin-login-button">
+	<a href="LOGIN.php">Login</a>
+	</button> 
+  </div>
+ 
+  <h1>WELCOME ON TORAONLINE WEBSITE<br/>OUR ORGANIZATION LEADER</h1><br/>
+      
+  <div class="button">
+    <button name="submit"><a href="LOGIN.php"> VOTE NEW LEADERS</a></button>
+  </div>
+  <h1>OUR OUTDATED LEADERS</h1>
+  <div class="cover-container">
+    <div class="cover">
+      <img src="pictures/ca-1.jpg">
+      <h1>Candidate 1</h1>
+      <p>
+        <ul>
+          <li>Position: President</li>
+          <li>Contact: 07864455887</li>
+          <li>Email: ger@gmail.com</li>
+          <li>Codes: 11111</li>
+        </ul>
+      </p>
+    </div>
+    <div class="cover">
+      <img src="pictures/ca-2.jpg">
+      <h1>Candidate 2</h1>
+      <p>
+        <ul>
+          <li>Position: Vice President</li>
+          <li>Contact: 0786665887</li>
+          <li>Email: ger@gmail.com</li>
+          <li>Codes: 22222</li>
+        </ul>
+      </p>
+    </div>
+    <div class="cover">
+      <img src="pictures/ca-3.jpg">
+      <h1>Candidate 3</h1>
+      <p>
+        <ul>
+          <li>Position: Accountant</li>
+          <li>Contact: 0786565587</li>
+          <li>Email: ger@gmail.com</li>
+          <li>Codes: 33333</li>
+        </ul>
+      </p>
+    </div>
+  </div>
+  
+  <div class="footer">
+    <div>
+      
+      <a href="contact.html">Contact us</a>
+      <a href="faq.html">FAQ</a>
+      <a href="terms.html">Terms and Conditions</a>
+    </div>
+  </div>
+</body>
+</html>

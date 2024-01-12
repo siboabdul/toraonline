@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="dash.css">
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="navbar">
+    <div>
+      <span class="ion-ios-analytics ion-lg"></span> Dashboard
+    </div>
+    <div class="search">
+      <input type="text" placeholder="Search...">
+    </div>
+	<div class="logout">
+	<a href="#"><ion-icon name="log-out"></ion-icon> log Out</a>
+	</div>
+  </div>
+  
+  <div class="sidebar">
+    <a href="dash.html"><ion-icon name="home"></ion-icon> Home</a>
+    <h4>manage candidate</h4>
+	<a href="candidate list.html" target="_self"><ion-icon name="podium"></ion-icon> All Candidates</a><br/>
+    <ul class="submenu">
+      <li><a href="add cand.html">Add</a></li>
+      
+    </ul>
+   
+	
+	<h4>manage employees</h4>
+	<a href="empl list.html" target="_self"><ion-icon name="podium"></ion-icon> All employees</a><br/>
+    <ul class="submenu">
+      <li><a href="add.html">Add</a></li>
+     
+    </ul>
+	 <h4>ALL DEPARTMENT</h4>
+    <ul class="submenu">
+      <li><a href="#">Add</a></li>
+      <li><a href="#">Edit</a></li>
+      <li><a href="#">Delete</a></li>
+	  <h4>block candidates</h4>
+	  <li><a href="#">Block</a></li>
+      <li><a href="#">Unblock</a></li>
+    </ul>
+    
+	
+  </div>
+  
+  <div class="main">
+    <div class="card">
+      <h3><ion-icon name="person"></ion-icon> all candidates</h3>
+    
+      <h3>XYZ business</h3>
+      <p class="votes">Numbers: <span id="votes-candidate1">00</span></p>
+    </div>
+    
+    <div class="card">
+      <h3><ion-icon name="person"></ion-icon> inactive candidate</h3>
+      <h3>XYZ business</h3>
+      
+      <p class="votes">Numbers: <span id="votes-candidate2">00</span></p>
+    </div>
+    
+    <div class="card">
+      <h3><ion-icon name="person"></ion-icon>all employees</h3>
+      <h3>XYZ business</h3>
+     
+      <p class="votes">Numbers: <span id="votes-candidate3">00</span></p>
+    </div>
+    
+    <div class="card">
+      <h3><ion-icon name="person"></ion-icon> all departments</h3>
+      <h3>XYZ business</h3>
+      
+      <p class="votes">Numbers: <span id="votes-candidate4">00</span></p>
+    </div>
+  </div>
+  
+  <div class="h4">
+    <h4>PERFORMANCE CHART FOR CANDIDATES IN VOTES</h4>
+  </div>
+  
+  <div class="chart-container">
+    <canvas id="columnChart" width="550" height="550"></canvas>
+  </div>
+  
+  <script src="dash.js"></script>
+</body>
+</html>

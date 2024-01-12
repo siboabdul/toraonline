@@ -1,0 +1,158 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar styles */
+.navbar {
+	position: fixed;
+	margin-left: 0px;
+	margin-right:0px;
+	margin-top: 0px;
+	width: 99%;
+  background-color: teal;
+
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 30px;
+  font-weight: 300;
+}
+.logout a{
+	position: flex;
+	margin-right: 60px;
+	align-items: center;
+	background-color:black;
+}
+
+
+/* Sidebar styles */
+.sidebar {
+  position: fixed;
+  width: 150px;
+  background-color: teal;
+  padding: 10px;
+  height: 100%;
+  margin-top: 70px;
+}
+
+.sidebar a {
+  display: block;
+  margin: 10px;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  position: relative;
+  transition: background-color 0s ease;
+}
+
+.sidebar a:hover {
+  background-color:silver;
+  color: white;
+  border-radius: 7px;
+  width: 85%;
+ padding: 5px;
+  
+}
+
+/* Main content styles */
+.main {
+	position: flex;
+	margin-left: 40px;
+  padding: 70px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: right;
+  align-items: right;
+}
+
+.chart-container {
+  margin-top: 10px;
+  margin-left: 400px;
+  text-align: center;
+  width: calc(80% - 200px);
+}
+
+/* Search area styles */
+.search {
+  margin-right: 200px;
+  width: 20%;
+  border: 5px solid black;
+  padding: 5px;
+  text-align: reft;
+  border-radius: 7px;
+}
+
+/* Card styles */
+.card {
+      background-color:whitesmoke;
+  padding-left: 10px;
+  margin-top: 70px;
+  margin-left: 60px;
+  width: 240px;
+  text-align: center;
+  font-size: 40px;
+  border-radius: 50px;
+}
+
+.card h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.h4{
+	margin-left: 30px;
+	margin-top: -70px;
+	text-align: center;
+	font-size: 30px;
+}
+
+/* Ionicons styles */
+.ion-lg {
+  font-size: 60px;
+}
+
+/* Dropdown button styles */
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Dropdown container styles */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Dropdown links styles */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Dropdown links hover state */
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+/* Show the dropdown content when the dropdown button is clicked */
+.show {
+  display: block;
+}

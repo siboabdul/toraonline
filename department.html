@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard</title>
+  <style>
+    body {
+      margin-top: 50px;
+      padding: 0;
+	  margin-left:0px;
+      font-family: Arial, sans-serif;
+    }
+
+    .navbar {
+	position: fixed;
+	margin-left: 0px;
+	margin-right:0px;
+	margin-top: -65px;
+	width: 100%;
+  background-color: teal;
+
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 30px;
+  font-weight: 300;
+}
+
+    .navbar div {
+      display: flex;
+      align-items: center;
+    }
+
+    .navbar span {
+      margin-right: 10px;
+    }
+
+    .search {
+  margin-right: 200px;
+  width: 20%;
+  border: 5px solid black;
+  padding: 5px;
+  text-align: reft;
+  border-radius: 7px;
+}
+
+    .logout a{
+	position: flex;
+	margin-right: 60px;
+	align-items: center;
+	background-color:black;
+}
+
+
+    /* Sidebar styles */
+    .sidebar {
+  position: fixed;
+  width: 150px;
+  background-color: teal;
+  padding: 10px;
+  height: 100%;
+  margin-top: 35px;
+}
+
+.sidebar a {
+  display: block;
+  margin: 5px;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  position: relative;
+  transition: background-color 0s ease;
+}
+
+.sidebar a:hover {
+  background-color:silver;
+  color: white;
+  border-radius: 7px;
+  width: 85%;
+ padding: 10px;
+  
+}
+    /* Main content styles */
+.main {
+	position: flex;
+	margin-left: 40px;
+  padding: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: right;
+  align-items: right;
+}
+
+
+
+  </style>
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+  <div class="navbar">
+    <div>
+      <span class="ion-ios-analytics ion-lg"></span>
+      <div>Dashboard</div>
+    </div>
+    <div class="search">
+      <input type="text" placeholder="Search...">
+    </div>
+    <div class="logout">
+      <a href="#"><ion-icon name="log-out"></ion-icon> log Out</a>
+    </div>
+  </div>
+  
+  <div class="sidebar">
+    <a href="dash.html"><ion-icon name="home"></ion-icon> Home</a>
+    <h4>manage user</h4>
+    <ul class="submenu">
+      <li><a href="#">Add</a></li>
+      <li><a href="#">Edit</a></li>
+      <li><a href="#">Delete</a></li>
+    </ul>
+    <a href="candidate list.html" target="_self"><ion-icon name="podium"></ion-icon> All Candidates</a>
+    
+    <h4>manage employees</h4>
+    <ul class="submenu">
+      <li><a href="#">Add</a></li>
+      <li><a href="#">Edit</a></li>
+      <li><a href="#">Delete</a></li>
+    </ul>
+    
+    <a href="#" target="_self"><ion-icon name="podium"></ion-icon> All voters</a>
+    <h4>ALL DEPARTMENT</h4>
+    <ul class="submenu">
+      <li><a href="#">Add</a></li>
+      <li><a href="#">Edit</a></li>
+      <li><a href="#">Delete</a></li>
+	   <h4>block candidates</h4>
+	  <li><a href="#">block</a></li>
+      <li><a href="#">unblock</a></li>
+    </ul>
+    
+	
+  </div>
+  
+  <div class="main">
+    <div class="card">
+      <h3><ion-icon name="person"></ion-icon> all candidates</h3>
+     <h3>XYZ business</h3>
+      <p class="votes">Numbers: <span id="votes-candidate1">00</span></p>
+    </div>
+   <div class="card">
+      <h3><ion-icon name="person"></ion-icon> inactive candidate</h3>
+      <h3>XYZ business</h3>
+      
+      <p class="votes">Numbers: <span id="votes-candidate2">00</span></p>
+    </div>
+    
+    <div class="card">
+      <h3><ion-icon name="person"></ion-icon>all employees</h3>
+      <h3>XYZ business</h3>
+     
+      <p class="votes">Numbers: <span id="votes-candidate3">00</span></p>
+    </div>
+    
+    <div class="card">
+      <h3><ion-icon name="person"></ion-icon> all departments</h3>
+      <h3>XYZ business</h3>
+      
+      <p class="votes">Numbers: <span id="votes-candidate4">00</span></p>
+    </div>
+  </div> 
+  <div class="h4">
+    <h4> ALL CANDIDATES IN SYSTEM</h4>
+  </div>
+   
+    <table>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Department</th>
+        <th>Status</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>John Doe</td>
+        <td>john.doe@example.com</td>
+        <td>Marketing</td>
+        <td>Active</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Jane Smith</td>
+        <td>jane.smith@example.com</td>
+        <td>Finance</td>
+        <td>Inactive</td>
+      </tr>
+    </table>
+  </div>
+
+  <script src="dash.js"></script>
+</body>
+</html>

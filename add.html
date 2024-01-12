@@ -1,0 +1,114 @@
+ <!DOCTYPE.html>   
+	<html>
+	
+	<head>
+	
+	<style>
+  body {
+    background-color: whitesmoke;
+  }
+ .h1{
+ align: center;
+ margin-left: 630px;
+ }
+
+  form {
+    background-color: silver;
+    padding: 50px;
+	align: center;
+	margin-left:600px;
+	width: 200px;
+	display: inline-block;
+	border-radius:20px;
+  }
+
+  .form-group {
+    margin-bottom: 10px;
+	align: center;
+  }
+
+  .form-group label {
+    display: block;
+    font-weight: bold;
+	align: center;
+  }
+
+  .form-group input[type="text"],
+  .form-group input[type="email"] {
+    width: 200px;
+    padding: 6px;
+    border: 2px solid black;
+    border-radius: 3px;
+  }
+
+  button {
+    padding: 20px 40px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: skyblue;
+  }
+
+  input[type="submit"] {
+    display: none;
+  }
+</style>
+</head>
+<body>
+<div class="h1">
+<h1>Adding employee</h1>
+</div>
+<form>
+<div class="form-group">
+    <label for="id">ID:</label>
+    <input type="text" id="id" name="id" required>
+  </div>
+  <div class="form-group">
+    <label for="fname">First Name:</label>
+    <input type="text" id="fname" name="fname" required>
+  </div>
+
+  <div class="form-group">
+    <label for="lname">Last Name:</label>
+    <input type="text" id="lname" name="lname" required>
+  </div>
+
+  <div class="form-group">
+    <label for="birthdate">Birth Date:</label>
+    <input type="text" id="birthdate" name="birthdate" required>
+  </div>
+
+  <div class="form-group">
+    <label for="gender">Gender:</label>
+    <input type="text" id="gender" name="gender" required>
+  </div>
+
+  <div class="form-group">
+    <label for="position">Position:</label>
+    <input type="text" id="position" name="position" required>
+  </div>
+
+  <div class="form-group">
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+  </div>
+
+  <div class="form-group">
+    <label for="address">document</label>
+    <input type="file" id="document" name="document">
+  </div>
+
+  <div id="dynamicInputs"></div>
+  <button type="button" onclick="addNewInput()">Add</button>
+
+  
+</form>
+
+
+</body>
+</body>
